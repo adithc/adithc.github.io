@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Basic Example</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
 </head>
+
 <body>
-    <h1>Hello World!</h1>
-    <p>This is a basic example of HTML, CSS, and JavaScript.</p>
-    <p>hello</p>
-    <button id="myButton">Click me</button>
-    <script src="index.js"></script>
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">Ludis Coaching</div>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+
+        <li class="services">
+          <a href="/">Services</a>
+
+          <!-- DROPDOWN MENU -->
+          
+
+        </li>
+
+        <li><a href="/">Pricing</a></li>
+        <li><a href="/">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+  <img src="https://www.usu.edu/today/images/stories/xl/22_EXT_Sports_UST.jpg" alt="Ludis Coaching" class="image-backdrop">
+  <div class="overlay"></div>
+
 </body>
+
 </html>
