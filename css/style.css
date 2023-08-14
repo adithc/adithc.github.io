@@ -73,6 +73,55 @@ form {
 	margin-bottom: 0;
 }
 
+.about-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: transparent;
+  }
+  
+  .header {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .employee-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .employee {
+    width: calc(50% - 1rem);
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .employee img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .employee .employee-name {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    color: #333;
+  }
+  
+  .employee p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+
+
 blockquote {
 	padding-left: 0;
 	border-left: 0;
