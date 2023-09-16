@@ -12,7 +12,6 @@
   body {
     font-family: "DM Sans", sans-serif; /* Use DM Sans font */
     padding: 20px;
-    text-align: center; /* Center-align the text in the body */
   }
 
   .w3-sidebar a {
@@ -20,11 +19,11 @@
   }
 
   body, h1, h2, h3, h4, h5, h6, .w3-wide {
-    font-family: "Montserrat", sans-serif;
+    font-family: "DM Sans", sans-serif;
   }
 
   .w3-sidebar {
-    display: none; /* Hide the sidebar on larger screens */
+    padding: 20px;
   }
 
   /* Change the background color to orange and text color to white for the sidebar */
@@ -33,28 +32,25 @@
     color: white;
   }
 
-  /* Style the location buttons */
-  .location-button {
-    display: inline-block;
-    padding: 15px 30px; /* Increase button size */
-    margin: 10px;
-    border: 2px solid #333; /* Dark gray border */
-    border-radius: 5px;
-    text-decoration: none;
+  /* Add padding to the main content area */
+  .w3-main {
+    padding: 20px;
+  }
+
+  /* Add padding to the product grid items */
+  .w3-container {
+    padding: 20px;
+  }
+
+  /* Style the footer with white colors */
+  .footer-basic {
+    background-color: white;
     color: #333; /* Dark gray text color */
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
-    font-size: 18px; /* Increase button font size */
   }
 
-  .location-button:hover {
-    background-color: #333; /* Dark gray background on hover */
-    color: white;
-  }
-
-  /* Style the welcome message */
-  .welcome-message {
-    font-size: 24px; /* Reduce the size of the welcome message */
+  /* Style the footer links with dark gray color */
+  .footer-basic a {
+    color: #333; /* Dark gray text color */
   }
 </style>
 </head>
@@ -67,15 +63,12 @@
     <img class="w3-wide" src="ludisfull.png">
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a href="FAC-seattle.html" class="w3-bar-item w3-button location-button">Seattle</a>
-    <a href="FAC-toledo.html" class="w3-bar-item w3-button location-button">Toledo</a>
-    <a href="FAC-chicago.html" class="w3-bar-item w3-button location-button">Chicago</a>
-    <a href="FAC-penn.html" class="w3-bar-item w3-button location-button">Pennsylvania</a>
-    <a href="FAC-austin.html" class="w3-bar-item w3-button location-button">Austin</a>
+    <a href="FAC-seattle.html" class="w3-bar-item w3-button">Seattle</a>
+    <a href="FAC-toledo.html" class="w3-bar-item w3-button">Toledo</a>
+    <a href="FAC-chicago.html" class="w3-bar-item w3-button">Chicago</a>
+    <a href="FAC-penn.html" class="w3-bar-item w3-button">Pennsylvania</a>
+    <a href="FAC-austin.html" class="w3-bar-item w3-button">Austin</a>
   </div>
-  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
-  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -86,15 +79,69 @@
 
   <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:83px"></div>
- 
-  <!-- Add a welcome message -->
-  <div class="w3-container">
-    <h1 class="welcome-message">Welcome to Ludis Coaching</h1>
-    <p>Please select a location to view available coaches:</p>
+  <h3><b>Toledo</b></h3>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>8 Coaches</p>
   </div>
 
-  <!-- Remove the coaches' content for this landing page -->
-  <!-- Rest of your code... -->
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <!-- Add padding to product grid items -->
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="#" style="width:100%">
+        <p>~<br><b>bball</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="#" style="width:100%">
+        <p>~<br><b>bball</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="/w3images/jeans2.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+          </div>
+        </div>
+        <p>~<br><b>bball</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="/w3images/jeans3.jpg" style="width:100%">
+        <p>~<br><b>bball</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="/w3images/jeans3.jpg" style="width:100%">
+        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="/w3images/jeans4.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Top Rated</span>
+          <div class="w3-display-middle w3-display-hover">
+          </div>
+        </div>
+        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="/w3images/jeans4.jpg" style="width:100%">
+        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="/w3images/jeans1.jpg" style="width:100%">
+        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+      </div>
+    </div>
+  </div>
 
   <!-- Remove the orange background from the footer -->
   <div class="footer-basic">
