@@ -1,119 +1,144 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,700"> <!-- Use DM Sans font -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-  body {
-    font-family: "DM Sans", sans-serif; /* Use DM Sans font */
-    padding: 20px;
-    text-align: center; /* Center-align the text in the body */
-  }
+  <title>Find A Coach</title>
 
-  .w3-sidebar a {
-    font-family: "DM Sans", sans-serif; /* Use DM Sans font */
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,700"> <!-- Use DM Sans font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: "DM Sans", sans-serif;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100vh;
+      text-align: center;
+    }
 
-  body, h1, h2, h3, h4, h5, h6, .w3-wide {
-    font-family: "Montserrat", sans-serif;
-  }
+    .w3-sidebar a {
+      font-family: "DM Sans", sans-serif;
+    }
 
-  .w3-sidebar {
-    display: none; /* Hide the sidebar on larger screens */
-  }
+    body, h1, h2, h3, h4, h5, h6, .w3-wide {
+      font-family: "Montserrat", sans-serif;
+    }
 
-  /* Change the background color to orange and text color to white for the sidebar */
-  .w3-sidebar.w3-bar-block {
-    background-color: orange;
-    color: white;
-  }
+    .w3-sidebar {
+      display: none;
+    }
 
-  /* Style the location buttons */
-  .location-button {
-    display: inline-block;
-    padding: 15px 30px; /* Increase button size */
-    margin: 10px;
-    border: 2px solid #333; /* Dark gray border */
-    border-radius: 5px;
-    text-decoration: none;
-    color: #333; /* Dark gray text color */
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
-    font-size: 18px; /* Increase button font size */
-  }
+    .w3-main {
+      flex-grow: 1; /* Push the content to the center vertically */
+    }
 
-  .location-button:hover {
-    background-color: #333; /* Dark gray background on hover */
-    color: white;
-  }
+    /* Change the background color to orange and text color to white for the sidebar */
+    .w3-sidebar.w3-bar-block {
+      background-color: orange;
+      color: white;
+    }
 
-  /* Style the welcome message */
-  .welcome-message {
-    font-size: 24px; /* Reduce the size of the welcome message */
-  }
-</style>
+    /* Style the location buttons */
+    .location-button {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 10px;
+      border: 2px solid #333;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+      font-size: 18px;
+    }
+
+    .location-button:hover {
+      background-color: #333;
+      color: white;
+    }
+
+    /* Style the welcome message */
+    .welcome-message {
+      font-size: 24px;
+    }
+
+    /* Add margin to the footer */
+    .footer-basic {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body class="w3-content" style="max-width:1200px">
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
-  <div class="w3-container w3-display-container w3-padding-16">
-    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-    <img class="w3-wide" src="ludisfull.png">
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+      <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+      <img class="w3-wide" src="ludisfull.png">
+    </div>
+    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+      <a href="FAC-seattle.html" class="w3-bar-item w3-button location-button">Seattle</a>
+      <a href="FAC-toledo.html" class="w3-bar-item w3-button location-button">Toledo</a>
+      <a href="FAC-chicago.html" class="w3-bar-item w3-button location-button">Chicago</a>
+      <a href="FAC-penn.html" class="w3-bar-item w3-button location-button">Pennsylvania</a>
+      <a href="FAC-austin.html" class="w3-bar-item w3-button location-button">Austin</a>
+    </div>
+    <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+    <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:250px">
+
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+    <!-- Add a welcome message -->
+    <div class="w3-container">
+      <p>‎ </p>
+      <p> ‎</p>
+
+      <p> ‎</p>
+      <p>‎</p>
+      <p>‎</p>
+      <p> </p>
+      <p> </p>
+
+      <h5 class="welcome-message"><b>Welcome to Ludis Coaching</b></h5>
+      <p>Please select a location to view available coaches:</p>
+    </div>
+
+    <!-- Remove the coaches' content for this landing page -->
+    <!-- Rest of your code... -->
+
+    <!-- Remove the orange background from the footer -->
+    <div class="footer-basic">
+      <footer>
+        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+            <li class="list-inline-item"><a href="#">Services</a></li>
+            <li class="list-inline-item"><a href="#">About</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p></p>
+        <p></p>
+        <div class="unit-body contact-classic-link"><a href="mailto:#">contact@ludiscoaching.com</a></div>
+        <p class="copyright">Ludis Coaching © 2023</p>
+      </footer>
+    </div>
+
   </div>
-  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a href="FAC-seattle.html" class="w3-bar-item w3-button location-button">Seattle</a>
-    <a href="FAC-toledo.html" class="w3-bar-item w3-button location-button">Toledo</a>
-    <a href="FAC-chicago.html" class="w3-bar-item w3-button location-button">Chicago</a>
-    <a href="FAC-penn.html" class="w3-bar-item w3-button location-button">Pennsylvania</a>
-    <a href="FAC-austin.html" class="w3-bar-item w3-button location-button">Austin</a>
-  </div>
-  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
-  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
-
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
- 
-  <!-- Add a welcome message -->
-  <div class="w3-container">
-    <h1 class="welcome-message">Welcome to Ludis Coaching</h1>
-    <p>Please select a location to view available coaches:</p>
-  </div>
-
-  <!-- Remove the coaches' content for this landing page -->
-  <!-- Rest of your code... -->
-
-  <!-- Remove the orange background from the footer -->
-  <div class="footer-basic">
-    <footer>
-      <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-      <ul class="list-inline">
-          <li class="list-inline-item"><a href="#">Home</a></li>
-          <li class="list-inline-item"><a href="#">Services</a></li>
-          <li class="list-inline-item"><a href="#">About</a></li>
-          <li class="list-inline-item"><a href="#">Terms</a></li>
-          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-      </ul>
-      <p></p>
-      <p></p>
-      <div class="unit-body contact-classic-link"><a href="mailto:#">contact@ludiscoaching.com</a></div>
-      <p class="copyright">Ludis Coaching © 2023</p>
-    </footer>
-  </div>
-
-</div>
 </body>
 </html>

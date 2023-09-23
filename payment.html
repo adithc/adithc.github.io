@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Lesson</title>
+    <!-- Add the DM Sans font using a link tag -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Add your CSS styling here with DM Sans font -->
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif; /* Use DM Sans font */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .stripe-buy-buttons {
+            display: flex;
+            justify-content: center; /* Center the buttons horizontally */
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .stripe-buy-button {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Book Your Lessons with Ludis Coaching</h1>
+    <p>   All payments are secure and end-to-end encrypted for your safety. You will be redirected to Stripe to complete your payment.
+    </p>
+    <div class="stripe-buy-buttons">
+        <div class="stripe-buy-button">
+            <!-- Stripe Buy Button 1 -->
+            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+            <stripe-buy-button
+                buy-button-id="buy_btn_1NtaGtH9RKOIpxDLjDJWfK2J"
+                publishable-key="pk_live_51NmeRbH9RKOIpxDLeC1TFiy6N1PiAplpSHmqPX8khchG4xu2AqyzoWF0tgAE4GLbtFCBwmZTX9Jpj9GQC8wjLpsj00fqvGSDpG"
+            ></stripe-buy-button>
+        </div>
+
+        <div class="stripe-buy-button">
+            <!-- Stripe Buy Button 2 -->
+            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+            <stripe-buy-button
+                buy-button-id="buy_btn_1NtaKBH9RKOIpxDLQtTkmbwN"
+                publishable-key="pk_live_51NmeRbH9RKOIpxDLeC1TFiy6N1PiAplpSHmqPX8khchG4xu2AqyzoWF0tgAE4GLbtFCBwmZTX9Jpj9GQC8wjLpsj00fqvGSDpG"
+            ></stripe-buy-button>
+        </div>
+
+        <div class="stripe-buy-button">
+            <!-- Stripe Buy Button 3 -->
+            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+            <stripe-buy-button
+                buy-button-id="buy_btn_1NtaKvH9RKOIpxDLY4slZ8sr"
+                publishable-key="pk_live_51NmeRbH9RKOIpxDLeC1TFiy6N1PiAplpSHmqPX8khchG4xu2AqyzoWF0tgAE4GLbtFCBwmZTX9Jpj9GQC8wjLpsj00fqvGSDpG"
+            ></stripe-buy-button>
+        </div>
+    </div>
+</body>
+</html>
