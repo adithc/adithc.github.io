@@ -5,59 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/contactus.css">
   <link rel="stylesheet" href="css/style.css">
-
+  <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
   <title>Contact Us</title>
 </head>
+
+<style>
+  body {
+    font-family: "DM Sans"; /* Use DM Sans font */
+  }
+  </style>
 <body>
-  <div class="rd-navbar-wrap">
-    <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
-      <div class="rd-navbar-main-outer">
-        <div class="rd-navbar-main">
-          <!-- RD Navbar Panel-->
-          <div class="rd-navbar-panel">
-            <!-- RD Navbar Toggle-->
-            <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-            <!-- RD Navbar Brand-->
-            <div class="rd-navbar-brand"><a class="brand" href="index.html"><img src="images/ludisfull.png" alt="" width="10" height="23"/></a></div>
-          </div>
-          <div class="rd-navbar-main-element">
-            <div class="rd-navbar-nav-wrap">
-              <!-- RD Navbar Basket-->
-              <div class="rd-navbar-basket-wrap">
-                <button class="rd-navbar-basket fl-bigmug-line-shopping198" data-rd-navbar-toggle=".cart-inline"><span>2</span></button>
-                <div class="cart-inline">
-                  ...
-                </div>
-              </div>
-              <!-- RD Navbar Search-->
-              <div class="rd-navbar-search">
-                ...
-              </div>
-             
-              <!-- RD Navbar Nav-->
-              <ul class="rd-navbar-nav">
-                <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
-                </li>
-                <li class="rd-nav-item"><a class="rd-nav-link" href="aboutus.html">About Us</a>
-                </li>
-                <li class="rd-nav-item"><a class="rd-nav-link" href="findacoach.html">Find A Coach</a>
-                </li>
-                <li class="rd-nav-item"><a class="rd-nav-link" href="faq.html">FAQ</a>
-                </li>
-                <li class="rd-nav-item"><a class="rd-nav-link" href="contactus.html">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-            <div class="rd-navbar-project-hamburger" data-rd-navbar-toggle=".rd-navbar-main">
-              ...
-            </div>
-          </div>
-          ...
-        </div>
-      </div>
-    </nav>
-  </div>
-  <div class="contact-form-container">
+ 
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <img src="ludisfull.png"></img>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="findacoach.html">Find A Coach</a></li>
+      <li><a href="contactus.html">Contact</a></li>
+      <li><a href="payment.html">BOOK</a></li>
+    </ul>
+  </nav>
+  
+<div class="contact-form-container">
     <h1 class="header">Contact Us</h1>
     <form class="contact-form" action="mailto: contact@ludiscoaching.com" method="post">
       <div class="form-group">
