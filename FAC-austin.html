@@ -55,6 +55,22 @@
   .footer-basic a {
     color: #333; /* Dark gray text color */
   }
+
+  /* Square images */
+  .square-image {
+    width: 100%;
+    padding-top: 100%; /* 1:1 aspect ratio (square) */
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Center content within square */
+  .square-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 </style>
 </head>
 <body class="w3-content" style="max-width:1200px">
@@ -100,84 +116,99 @@
   <h3><b>Austin</b></h3>
   <div class="w3-container w3-text-grey" id="jeans">
     <p>8 Coaches</p>
-  </div>
-
-  <!-- Product grid -->
-  <div class="w3-row w3-grayscale">
-    <!-- Add padding to product grid items -->
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="#" style="width:100%">
-        <p>~<br><b>bball</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="#" style="width:100%">
-        <p>~<br><b>bball</b></p>
-      </div>
-    </div>
-
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="/w3images/jeans2.jpg" style="width:100%">
-          <span class="w3-tag w3-display-topleft">New</span>
-          <div class="w3-display-middle w3-display-hover">
-          </div>
-        </div>
-        <p>~<br><b>bball</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="/w3images/jeans3.jpg" style="width:100%">
-        <p>~<br><b>bball</b></p>
-      </div>
-    </div>
-
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="/w3images/jeans3.jpg" style="width:100%">
-        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
-      </div>
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="/w3images/jeans4.jpg" style="width:100%">
-          <span class="w3-tag w3-display-topleft">Top Rated</span>
-          <div class="w3-display-middle w3-display-hover">
-          </div>
-        </div>
-        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
-      </div>
-    </div>
-
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="/w3images/jeans4.jpg" style="width:100%">
-        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="/w3images/jeans1.jpg" style="width:100%">
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
-      </div>
+  </div><!-- Product grid -->
+<div class="w3-row w3-grayscale">
+  <!-- Add padding to product grid items -->
+  <div class="w3-col l3 s6">
+    <div class="w3-container">
+      <a href="coach-link.html"><div class="square-image">
+        <img src="/images/nishant_pic.jpg" alt="Coach 1" class="square-content">
+      </div></a>
+      <p>~<br><b>bball</b></p>
     </div>
   </div>
 
-  <!-- Remove the orange background from the footer -->
-  <div class="footer-basic">
-    <footer>
-      <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-      <ul class="list-inline">
-          <li class="list-inline-item"><a href="#">Home</a></li>
-          <li class="list-inline-item"><a href="#">Services</a></li>
-          <li class="list-inline-item"><a href="#">About</a></li>
-          <li class="list-inline-item"><a href="#">Terms</a></li>
-          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-      </ul>
-      <p></p>
-      <p></p>
-      <div class="unit-body contact-classic-link"><a href="mailto:#">contact@ludiscoaching.com</a></div>
-      <p class="copyright">Ludis Coaching © 2023</p>
-    </footer>
+  <div class="w3-col l3 s6">
+    <div class="w3-container">
+      <a href="coach-link.html"><div class="square-image">
+        <img src="#" alt="Coach 2" class="square-content">
+      </div></a>
+      <p>~<br><b>bball</b></p>
+    </div>
   </div>
 
+  <div class="w3-col l3 s6">
+    <div class="w3-container">
+      <a href="coach-link.html"><div class="square-image">
+        <img src="/w3images/jeans2.jpg" alt="Coach 3" class="square-content">
+      </div></a>
+      <p>~<br><b>bball</b></p>
+    </div>
+  </div>
+
+  <div class="w3-col l3 s6">
+    <div class="w3-container">
+      <a href="coach-link.html"><div class="square-image">
+        <img src="/w3images/jeans3.jpg" alt="Coach 4" class="square-content">
+      </div></a>
+      <p>~<br><b>bball</b></p>
+    </div>
+  </div>
+
+  <!-- Repeat the above 4 columns for coaches 5-8 -->
+  <div class="w3-col l3 s6">
+    <div class="w3-container">
+      <a href="coach-link.html"><div class="square-image">
+        <img src="#" alt="Coach 5" class="square-content">
+      </div></a>
+      <p>~<br><b>bball</b></p>
+    </div>
+  </div>
+
+  <div class="w3-col l3 s6">
+    <div class="w3-container">
+      <a href="coach-link.html"><div class="square-image">
+        <img src="#" alt="Coach 6" class="square-content">
+      </div></a>
+      <p>~<br><b>bball</b></p>
+    </div>
+  </div>
+
+  <div class="w3-col l3 s6">
+    <div class="w3-container">
+      <a href="coach-link.html"><div class="square-image">
+        <img src="#" alt="Coach 7" class="square-content">
+      </div></a>
+      <p>~<br><b>bball</b></p>
+    </div>
+  </div>
+
+  <div class="w3-col l3 s6">
+    <div class="w3-container">
+      <a href="coach-link.html"><div class="square-image">
+        <img src="#" alt="Coach 8" class="square-content">
+      </div></a>
+      <p>~<br><b>bball</b></p>
+    </div>
+  </div>
+</div>
+<!-- Remove the orange background from the footer -->
+<div class="footer-basic">
+  <footer>
+    <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Home</a></li>
+        <li class="list-inline-item"><a href="#">Services</a></li>
+        <li class="list-inline-item"><a href="#">About</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+    </ul>
+    <p></p>
+    <p></p>
+    <div class="unit-body contact-classic-link"><a href="mailto:#">contact@ludiscoaching.com</a></div>
+    <p class="copyright">Ludis Coaching © 2023</p>
+  </footer>
+</div>
 </div>
 </body>
 </html>
