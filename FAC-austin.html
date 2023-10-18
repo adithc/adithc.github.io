@@ -74,20 +74,25 @@
 </style>
 </head>
 <body class="w3-content" style="max-width:1200px">
-  <nav>
+  <nav style="position: fixed; top: 0; left: 0; width: 100%; z-index: 100;">
     <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
+    <label for="check" class="checkbtn" style="float: left; cursor: pointer; padding: 10px 20px;">
       <i class="fas fa-bars"></i>
     </label>
-    <img src="ludisfull.png"></img>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutus.html">About</a></li>
-      <li><a href="findacoach.html">Find A Coach</a></li>
-      <li><a href="contactus.html">Contact</a></li>
-      <li><a href="payment.html">BOOK</a></li>
+    <div style="display: flex; align-items: center;">
+      <img src="ludisfull.png" alt="Ludis Logo" style="max-height: 40px;">
+    </div>
+    <ul style="list-style-type: none; padding: 0; margin: 0; display: flex; justify-content: flex-end; align-items: center;">
+      <li><a href="index.html" style="text-decoration: none; color: white; padding: 10px 20px;">Home</a></li>
+      <li><a href="aboutus.html" style="text-decoration: none; color: white; padding: 10px 20px;">About</a></li>
+      <li><a href="findacoach.html" style="text-decoration: none; color: white; padding: 10px 20px;">Find A Coach</a></li>
+      <li><a href="contactus.html" style="text-decoration: none; color: white; padding: 10px 20px;">Contact</a></li>
+      <li><a href="payment.html" style="text-decoration: none; color: white; padding: 10px 20px;">BOOK</a></li>
     </ul>
   </nav>
+  
+  
+  
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
@@ -113,7 +118,7 @@
 
   <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:83px"></div>
-  <h3><b>Austin</b></h3>
+  <h3 style="margin-top: 80px;"><b>Austin</b></h3>
   <div class="w3-container w3-text-grey" id="jeans">
     <p>8 Coaches</p>
   </div><!-- Product grid -->
