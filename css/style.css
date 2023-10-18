@@ -6319,16 +6319,16 @@ h4 + .instafeed {
 }
 
 html [class*='section-'].section-bottom-0 {
-	padding-bottom: 0;
+	padding-bottom: 20;
 }
 
 html [class*='section-'].section-top-0 {
-	padding-top: 0;
+	padding-top: 20;
 }
 
 @media (min-width: 992px) {
 	html [class*='section-'].section-lg-0 {
-		padding: 0;
+		padding: 20;
 	}
 }
 

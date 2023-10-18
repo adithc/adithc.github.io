@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Ludis Coaching</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Stylesheets-->
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:400,500%7CTeko:300,400,500%7CMaven+Pro:500">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <style>
+    body {
+      font-family: "DM Sans", sans-serif;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .w3-sidebar a {
+      font-family: "DM Sans", sans-serif;
+    }
+
+
+    .w3-sidebar {
+      display: none;
+    }
+
+    .w3-main {
+      flex-grow: 1; /* Push the content to the center vertically */
+    }
+
+    /* Change the background color to orange and text color to white for the sidebar */
+    .w3-sidebar.w3-bar-block {
+      background-color: orange;
+      color: white;
+    }
+
+    /* Style the location buttons */
+    .location-button {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 10px;
+      border: 2px solid #333;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+      font-size: 18px;
+    }
+
+    .location-button:hover {
+      background-color: #333;
+      color: white;
+    }
+
+    /* Style the welcome message */
+    .welcome-message {
+      font-size: 24px;
+    }
+
+    /* Add margin to the footer */
+    .footer-basic {
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <img src="ludisfull.png"></img>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="findacoach.html">Find A Coach</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li><a href="payment.html">BOOK</a></li>
+      </ul>
+    </nav>
+      <!-- Swiper-->
+      <section class="section swiper-container swiper-slider swiper-slider-classic" data-loop="true" data-autoplay="5000" data-simulate-touch="true" data-direction="vertical" data-nav="false">
+        <div class="swiper-wrapper text-center">
+          <div class="swiper-slide context-dark" data-slide-bg="images/ludis.png">
+            <div class="swiper-slide-caption section-md">
+              <div class="container">
+                <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Innovative and affordable</h1>
+                <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Our coaches uses innovating training methods combined with customized planning to deliver the best lessons for your kids while saving costs.</p><a class="button button-primary button-ujarak" href="#" data-caption-animate="fadeInUp" data-caption-delay="200">Find a Coach</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide context-dark" data-slide-bg="images/ludis.png">
+            <div class="swiper-slide-caption section-md">
+              <div class="container">
+                <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Committed and professional</h1>
+                <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">All our coaches are completely committed to the end result, while being fully professional in all aspects of teaching your child their dream sport.</p><a class="button button-primary button-ujarak" href="#" data-caption-animate="fadeInUp" data-caption-delay="200">Find a Coach</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide context-dark" data-slide-bg="images/ludis.png">
+            <div class="swiper-slide-caption section-md">
+              <div class="container">
+                <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Why Choose Us?</h1>
+                <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Our high school coaches are not only high level varsity competing athletes but also student leaders and role models in their teams and schools. Having your child work with a positive, role-model high school coach has countless benefits, a few being that your child can learn and look up to an epitome of their game.
+                </p><a class="button button-primary button-ujarak" href="#" data-caption-animate="fadeInUp" data-caption-delay="200">Find a Coach</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper Pagination-->
+        <div class="swiper-pagination__module">
+          <div class="swiper-pagination__fraction"><span class="swiper-pagination__fraction-index">00</span><span class="swiper-pagination__fraction-divider">/</span><span class="swiper-pagination__fraction-count">00</span></div>
+          <div class="swiper-pagination__divider"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- See all services-->
+      <section class="section section-sm section-first bg-default text-center">
+        <div class="container">
+          <div class="row row-30 justify-content-center">
+            <div class="col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp">
+              <div class="figure-classic figure-classic-left"><img src="images/kidonfield Cropped.jpg" alt="" width="513" height="561"/>
+              </div>
+            </div>
+            <div class="col-lg-7 col-xl-6">
+              <div class="row row-30">
+                <div class="col-sm-6 wow fadeInRight">
+                  <article class="box-icon-modern box-icon-modern-custom">
+                    <div>
+                      <h3 class="box-icon-modern-big-title">See all services</h3>
+                      <div class="box-icon-modern-decor"></div><a class="button button-md button-default-outline-2 button-wapasha" href="#">All services</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-sm-6 wow fadeInRight" data-wow-delay=".1s">
+                  <article class="box-icon-modern box-icon-modern-2">
+                    <div class="box-icon-modern-icon fl-bigmug-line-cropping1"></div>
+                    <h5 class="box-icon-modern-title"><a href="#">filler</a></h5>
+                    <div class="box-icon-modern-decor"></div>
+                    <p class="box-icon-modern-text">filler</p>
+                  </article>
+                </div>
+                <div class="col-sm-6 wow fadeInRight" data-wow-delay=".2s">
+                  <article class="box-icon-modern box-icon-modern-2">
+                    <div class="box-icon-modern-icon fl-bigmug-line-paintbrush9"></div>
+                    <h5 class="box-icon-modern-title"><a href="#">filler</a></h5>
+                    <div class="box-icon-modern-decor"></div>
+                    <p class="box-icon-modern-text">filler</p>
+                  </article>
+                </div>
+                <div class="col-sm-6 wow fadeInRight" data-wow-delay=".3s">
+                  <article class="box-icon-modern box-icon-modern-2">
+                    <div class="box-icon-modern-icon fl-bigmug-line-chat55"></div>
+                    <h5 class="box-icon-modern-title"><a href="#">filler</a></h5>
+                    <div class="box-icon-modern-decor"></div>
+                    <p class="box-icon-modern-text">filler</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+     
+
+      <!-- Years of experience-->
+      <section class="section section-sm bg-default">
+        <div class="container">
+          <div class="row row-50 row-xl-24 justify-content-center align-items-center align-items-lg-start text-left">
+            <div class="col-md-6 col-lg-5 col-xl-4 text-center"><a class="text-img" href="about-us.html"><span class="counter">10</span></a></div>
+            <div class="col-sm-8 col-md-6 col-lg-5 col-xl-4">
+              <div class="text-width-extra-small offset-top-lg-24 wow fadeInUp">
+                <h3 class="title-decoration-lines-left">filler</h3>
+                <p class="text-gray-500">filler</p><a class="button button-secondary button-pipaluk" href="#">Find a Coach</a>
+              </div>
+            </div>
+            <div class="col-sm-10 col-md-8 col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
+              <div class="row justify-content-center border-2-column offset-top-xl-26">
+                <div class="col-9 col-sm-6">
+                  <div class="counter-amy">
+                    <div class="counter-amy-number"><span class="counter">2</span><span class="symbol">k</span>
+                    </div>
+                    <h6 class="counter-amy-title">Filler</h6>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-6">
+                  <div class="counter-amy">
+                    <div class="counter-amy-number"><span class="counter">40</span>
+                    </div>
+                    <h6 class="counter-amy-title">Filler</h6>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-6">
+                  <div class="counter-amy">
+                    <div class="counter-amy-number"><span class="counter">12</span>
+                    </div>
+                    <h6 class="counter-amy-title">Filler</h6>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-6">
+                  <div class="counter-amy">
+                    <div class="counter-amy-number"><span class="counter">26</span>
+                    </div>
+                    <h6 class="counter-amy-title">Filler</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-12 align-self-center">
+              <div class="row row-30 justify-content-center">
+                <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft"><a class="clients-classic" href="#"><img src="images/clients-9-270x117.png" alt="" width="270" height="117"/></a></div>
+                <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft" data-wow-delay=".1s"><a class="clients-classic" href="#"><img src="images/clients-10-270x117.png" alt="" width="270" height="117"/></a></div>
+                <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft" data-wow-delay=".2s"><a class="clients-classic" href="#"><img src="images/clients-3-270x117.png" alt="" width="270" height="117"/></a></div>
+                <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft" data-wow-delay=".3s"><a class="clients-classic" href="#"><img src="images/clients-11-270x117.png" alt="" width="270" height="117"/></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Years of experience-->
+      <section class="section section-sm section-fluid bg-default">
+        <div class="container-fluid">
+          <h3>Different sports  — one mission</h3>
+          <div class="row row-sm row-30 justify-content-center">
+            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight">
+              <!-- Team Classic-->
+              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="images/team-11-420x424.jpg" alt="" width="420" height="424"/></a>
+                <div class="team-classic-caption">
+                  <h3 class="team-classic-name"><a href="#">Soccer</a></h5>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".1s">
+              <!-- Team Classic-->
+              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="images/team-12-420x424.jpg" alt="" width="420" height="424"/></a>
+                <div class="team-classic-caption">
+                  <h3 class="team-classic-name"><a href="#">Basketball</a></h5>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".2s">
+              <!-- Team Classic-->
+              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="images/team-13-420x424.jpg" alt="" width="420" height="424"/></a>
+                <div class="team-classic-caption">
+                  <h3 class="team-classic-name"><a href="#">Volleyball</a></h5>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".3s">
+              <!-- Team Classic-->
+              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="images/team-14-420x424.jpg" alt="" width="420" height="424"/></a>
+                <div class="team-classic-caption">
+                  <h3 class="team-classic-name"><a href="#">Tennis</a></h5>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- You dream — we embody-->
+      <section class="section section-sm bg-default text-md-left">
+        <div class="container">
+          <div class="row row-50 align-items-center justify-content-center justify-content-xl-between">
+            <div class="col-lg-6 col-xl-5 wow fadeInLeft">
+              <h3>You dream — we embody</h3>
+              <!-- Bootstrap tabs-->
+              <div class="tabs-custom tabs-horizontal tabs-line tabs-line-big text-center text-md-left" id="tabs-6">
+                <!-- Nav tabs-->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item" role="presentation"><a class="nav-link nav-link-big active" href="#tabs-6-1" data-toggle="tab">01</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-2" data-toggle="tab">02</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-3" data-toggle="tab">03</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-4" data-toggle="tab">04</a></li>
+                </ul>
+                <!-- Tab panes-->
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tabs-6-1">
+                    <h5 class="font-weight-normal">Finding the perfect Coach</h5>
+                    <p>filler</p>
+                    <div class="group-md group-middle"><a class="button button-secondary button-pipaluk" href="findacoach.html">Find a Coach</a></div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-6-2">
+                    <h5 class="font-weight-normal">Scheduling a lesson</h5>
+                    <p>filler</p>
+                    <div class="group-md group-middle"><a class="button button-secondary button-pipaluk" href="findacoach.html">Find a Coach</a></div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-6-3">
+                    <h5 class="font-weight-normal">filler</h5>
+                    <p>filler</p>
+                    <div class="group-md group-middle"><a class="button button-secondary button-pipaluk" href="findacoach.html">Find a Coach</a></div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-6-4">
+                    <h5 class="font-weight-normal">filler</h5>
+                    <p>Ffiller.</p>
+                    <div class="group-md group-middle"><a class="button button-secondary button-pipaluk" href="findacoach.html">Find a Coach</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 text-center wow fadeInUp" data-wow-delay=".1s">
+              <div class="figure-classic figure-classic-right"><img src="images/index-2-556x434.jpg" alt="" width="556" height="434"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What people Say-->
+      <section class="section section-sm section-bottom-70 section-fluid bg-default">
+        <div class="container-fluid">
+          <h3>What people Say</h3>
+          <div class="row row-50 row-sm">
+            <div class="col-md-6 col-xl-4 wow fadeInRight">
+              <!-- Quote Modern-->
+              <article class="quote-modern quote-modern-custom">
+                <div class="unit unit-spacing-md align-items-center">
+                  <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles" src="images/user-11-75x75.jpg" alt="" width="75" height="75"/></a></div>
+                  <div class="unit-body">
+                    <h5 class="quote-modern-cite"><a href="#">filler</a></h5>
+                    <p class="quote-modern-status">filler</p>
+                  </div>
+                </div>
+                <div class="quote-modern-text">
+                  <p class="q">filler.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
+              <!-- Quote Modern-->
+              <article class="quote-modern quote-modern-custom">
+                <div class="unit unit-spacing-md align-items-center">
+                  <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles" src="images/user-12-75x75.jpg" alt="" width="75" height="75"/></a></div>
+                  <div class="unit-body">
+                    <h5 class="quote-modern-cite"><a href="#">filler</a></h5>
+                    <p class="quote-modern-status">filler</p>
+                  </div>
+                </div>
+                <div class="quote-modern-text">
+                  <p class="q">filler</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4 wow fadeInRight" data-wow-delay=".2s">
+              <!-- Quote Modern-->
+              <article class="quote-modern quote-modern-custom">
+                <div class="unit unit-spacing-md align-items-center">
+                  <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles" src="images/user-20-75x75.jpg" alt="" width="75" height="75"/></a></div>
+                  <div class="unit-body">
+                    <h5 class="quote-modern-cite"><a href="#">filler</a></h5>
+                    <p class="quote-modern-status">filler</p>
+                  </div>
+                </div>
+                <div class="quote-modern-text">
+                  <p class="q">filler</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p></p>
+            <p></p>
+            
+            <div class="unit-body contact-classic-link"><a href="mailto:#"> contact@ludiscoaching.com</a></a>
+
+            <p class="copyright">Ludis Coaching © 2023</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+      <footer class="section section-fluid footer-classic">
+        <div class="container-fluid">
+          <div class="row row-30 justify-content-center">
+            <div class="col-md-10 col-lg-12 col-xl-4 wow fadeInRight">
+                <p class="text-width-medium"></p>
+                <div class="contact-classic">
+              
+                  </div>
+                  
+                  <ul class="list-inline list-inline-sm footer-social-list">
+                    <li><a class="icon fa fa-facebook" href="#"></a></li>
+                    <li><a class="icon fa fa-twitter" href="#"></a></li>
+                    <li><a class="icon fa fa-instagram" href="#"></a></li>
+                  </ul>
+                  ul class="list-inline list-inline-sm footer-social-list">
+                    
+                    <li><a class="" href="#"></a></li>
+                  </ul>
+                  
+                  <p> </p>
+                  <p> </p>
+                  <p> </p>
+                  <p> </p>
+                  <p> </p>
+                  <p> </p>
+                  <p> </p>
+                  <p> </p>
+                </div>
+      
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- coded by Himic-->
+  </body>
+</html>
