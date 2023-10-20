@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,700">
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .profile {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            display: flex;
+            align-items: flex-start; /* Align items to the top */
+        }
+        .profile-picture {
+            max-width: 300px;
+            max-height: 300px;
+            object-fit: cover;
+            align-self: flex-start; /* Align the image to the top */
+        }
+        .profile-content {
+            margin-left: 40px;
+        }
+        .name {
+            font-size: 48px;
+            color: orange;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 30px;
+            margin-top: 10px;
+        }
+        .description {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .location {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <img src="ludisfull.png" alt="Ludis Logo">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="findacoach.html">Find A Coach</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+          <li><a href="payment.html">BOOK</a></li>
+        </ul>
+    </nav>
+    <div class="profile">
+        <img class="profile-picture" src="/images/b_xu.png" alt="Profile Picture">
+        <div class="profile-content">
+            <div class="name">Bryan Xu</div>
+            <div class="subtitle">
+                <span class="location">Seattle, USA</span>
+                <br>
+                <span>Tennis</span>
+            </div>
+            <div class="description">
+                <p>I am a senior at Redmond High School and have been playing tennis from over a decade! I play nationally competetive tournamnets
+                    and am the captain of my varsity team at Redmond High School. I love sharing my passion for the game and can't wait to coach!
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
