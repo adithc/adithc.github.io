@@ -7,9 +7,10 @@
   
 
 
-/* Add this CSS for mobile navigation */
+/* Add this CSS to make the menu items display vertically on mobile */
 nav ul {
-  display: none;
+  display: flex;
+  flex-direction: column;
   background-color: #333; /* You can change the background color */
   position: absolute;
   top: 60px; /* Adjust this value to control the dropdown position */
