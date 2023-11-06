@@ -1,25 +1,31 @@
 /* mobile-message.css */
 
 .mobile-message {
-    display: none; 
+    display: none;
   }
   
-  @media (max-width: 767px) {
-    
+  @media only screen and (max-width: 767px) {
+  
     body {
-      margin: 0;
+      margin: 0; 
     }
-    
+  
     .mobile-message {
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      color: white;
     }
   
     p {
       max-width: 90%;
+      text-align: center; 
     }
   
   }
