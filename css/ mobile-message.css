@@ -1,0 +1,20 @@
+/* Hide message for desktop */
+.mobile-message {
+    display: none; 
+  }
+  
+  /* Show message for mobile */
+  @media (max-width: 767px) {
+    .mobile-message {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      color: white;
+      text-align: center;
+      padding-top: 20%;
+    }
+  }
