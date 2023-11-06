@@ -4,9 +4,8 @@
 <head>
   <title>Ludis Coaching</title>
   <meta name="format-detection" content="telephone=no">
-  <meta name="viewport"
-    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
   <link rel="icon" href="images/favicon.ico">
@@ -24,56 +23,54 @@
     <![endif]-->
 </head>
 <style>
-  /* CSS for the mobile message (initially hidden) */
+
+nav img {
+    position: absolute;
+    left: 10;
+}
+
+.mobile-message {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  font-size: 26px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4000px; /* Set margin-top to 160px for mobile devices */
+}
+
+.mobile-message img {
+  max-width: 80%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
   .mobile-message {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: white;
-    text-align: center;
-    font-size: 26px; /* Adjust the font size as needed */
-    z-index: 9999;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 160px;
+    display: block;
+    pointer-events: auto;
+    margin-top: 0; /* Set margin-top to 0 for desktop */
   }
+}
 
-
-
-
-  .mobile-message img {
-    max-width: 80%;
-    margin-bottom: 20px; /* Adjust the margin as needed */
-    background-color: black;
-  }
-
-  /* Media query to show the message on mobile devices */
-  @media (max-width: 768px) {
-    .mobile-message {
-      display: block;
-      pointer-events: auto; /* Prevent user interaction */
-    }
-  }
 </style>
+
 
 
 <body>
 
   <div class="mobile-message">
-    <body style="
-      background-color: black; /* Set the background color of the body to black */
-      margin-top: 4000px; /* Remove any default margin */
-      overflow: hidden; /* Prevent scrolling while the mobile message is displayed */
-    ">
     <img src="ludisfull.png" alt="Ludis Coaching Logo">
     <p>Please visit us on a desktop for the optimal experience. Sorry for the inconvenience. Thank you.</p>
-  </body>
   </div>
+  
   
 
   <nav>
